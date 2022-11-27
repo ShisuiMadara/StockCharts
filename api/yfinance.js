@@ -1,10 +1,16 @@
 var yahooFinance = require('yahoo-finance');
 
+
 async function getData (req, res) {
+
+    console.log(req.data);
+
+    req = req.body;
     
-    const symbol = "AAPL" //req.symbol
-    const from = '2012-01-01'
-    const to =  '2012-12-31'
+    console.log(req);
+    const symbol = req.symbol
+    const from = req.from
+    const to =  req.to
 
     let f = 0
 
@@ -15,9 +21,9 @@ async function getData (req, res) {
             console.log(err)
             f = 1
         }
-        console.log(quotes);
         
         data = quotes
+        console.log(quotes);
         
     });
 
@@ -34,4 +40,5 @@ async function getData (req, res) {
 
 }
 
-getData()
+
+exports.execute = getData
