@@ -1,0 +1,9 @@
+.container {
+    width: 700;
+    margin: "0 auto"
+}
+.labels {
+    background: '#5B84B1FF';
+    padding: '5%';
+    font-family: '"Lucida Console", Monaco, monospace'
+}
