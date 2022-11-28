@@ -3,11 +3,7 @@ var yahooFinance = require('yahoo-finance');
 
 async function getData (req, res) {
 
-    console.log(req.data);
-
     req = req.body;
-    
-    console.log(req);
     const symbol = req.symbol
     const from = req.from
     const to =  req.to
