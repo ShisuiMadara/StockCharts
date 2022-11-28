@@ -1,5 +1,5 @@
 # StockCharts
-Plotting real time user friendly plots on stock market from a certain time period using yahoo finance API.
+Plotting real time user friendly plots on stock market from a certain date to another using yahoo finance API.
 
 <h1>Technologies used</h1>
 <br>
